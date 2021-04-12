@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { CarAddComponent } from './components/car-add/car-add.component';
 import { CarDetailComponent } from './components/car-detail/car-detail.component';
 import { CarImageAddComponent } from './components/car-image-add/car-image-add.component';
 import { ColorAddComponent } from './components/color-add/color-add.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ColorAddComponent } from './components/color-add/color-add.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
